@@ -1,7 +1,7 @@
 # 🛒 Smart Product Scraper
 
 **Scraper inteligent de produse** - proiect demonstrativ pentru seminarul de **Big Data și Securitate Cibernetică**,
-masteratul SIMPRE 2025–2026.
+masteratul SIMPRE 2025-2026.
 
 Proiectul ilustrează trei metode de web scraping, de la clasic la AI, folosind site-ul de
 practică [Web Scraper Test Sites](https://webscraper.io/test-sites/e-commerce/allinone).

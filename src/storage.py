@@ -134,7 +134,7 @@ def afiseaza_rezumat(produse: list[dict]):
 
         print(f"\n  {i}. {produs['nume']}")
         print(f"     Preț: {pret_info}")
-        print(f"     ID: {produs['id']} | Rating: {'⭐' * produs.get('rating', 0)}")
+        print(f"     ID: {produs['id']} | Rating: {'⭐ ' * produs.get('rating', 0)}")
 
     if len(produse) > 5:
         print(f"\n  ... și încă {len(produse) - 5} produse")
