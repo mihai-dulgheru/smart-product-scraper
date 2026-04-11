@@ -1,0 +1,17 @@
+# === Dependințe obligatorii ===
+# requests - bibliotecă HTTP pentru descărcarea paginilor web
+requests>=2.31.0
+# beautifulsoup4 - parser HTML pentru extragerea datelor din DOM
+beautifulsoup4>=4.12.0
+# python-dotenv - încarcă variabile de mediu din fișierul .env
+python-dotenv>=1.0.0
+
+# === Dependințe opționale (Metoda 2: Playwright) ===
+# playwright - browser headless pentru pagini dinamice (JavaScript)
+# După instalare, rulați: playwright install chromium
+playwright>=1.40.0
+
+# === Dependințe opționale (Metoda 3: LLM - bonus) ===
+# Decomentați UNA dintre liniile de mai jos, în funcție de API-ul ales:
+openai>=1.0.0
+#anthropic>=0.30.0

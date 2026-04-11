@@ -1,0 +1,29 @@
+# === Mediu virtual Python ===
+venv/
+.venv/
+env/
+
+# === Variabile de mediu (date sensibile - chei API) ===
+.env
+
+# === Cache Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# === Date generate (output-ul scraper-ului) ===
+data/
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === Sistem ===
+.DS_Store
+Thumbs.db

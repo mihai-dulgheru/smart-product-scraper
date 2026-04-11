@@ -1,0 +1,32 @@
+[
+  {
+    "id": "60",
+    "nume": "Asus VivoBook X441NA-GA190",
+    "pret": 295.99,
+    "pret_redus": null,
+    "descriere": "Asus VivoBook X441NA-GA190 Chocolate Black, 14\", Celeron N3450, 4GB, 128GB SSD, Endless OS, ENG kbd",
+    "rating": 3,
+    "numar_review-uri": 14,
+    "url": "https://webscraper.io/test-sites/e-commerce/allinone/product/60"
+  },
+  {
+    "id": "61",
+    "nume": "Prestigio SmartBook 133S Dark Grey",
+    "pret": 299.0,
+    "pret_redus": null,
+    "descriere": "Prestigio SmartBook 133S Dark Grey, 13.3\" FHD IPS, Celeron N3350 1.1GHz, 4GB, 32GB, Windows 10 Pro + Office 365 1 gadam",
+    "rating": 2,
+    "numar_review-uri": 8,
+    "url": "https://webscraper.io/test-sites/e-commerce/allinone/product/61"
+  },
+  {
+    "id": "62",
+    "nume": "Prestigio SmartBook 133S Gold",
+    "pret": 299.0,
+    "pret_redus": null,
+    "descriere": "Prestigio SmartBook 133S Gold, 13.3\" FHD IPS, Celeron N3350 1.1GHz, 4GB, 32GB, Windows 10 Pro + Office 365 1 gadam",
+    "rating": 1,
+    "numar_review-uri": 2,
+    "url": "https://webscraper.io/test-sites/e-commerce/allinone/product/62"
+  }
+]
