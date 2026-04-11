@@ -26,24 +26,6 @@ from pathlib import Path
 # (necesar când rulăm scriptul din rădăcina proiectului: python src/main.py)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from storage import afiseaza_rezumat, salveaza_csv, salveaza_json
-
-
-def configureaza_logging():
-    """
-    Configurează sistemul de logging pentru întreaga aplicație.
-
-    Logging-ul este esențial pentru debugging și monitorizare:
-      - INFO: mesaje despre progresul normal al execuției
-      - WARNING: situații neașteptate dar netratabile ca erori
-      - ERROR: erori care împiedică funcționarea normală
-
-    Formatul include timestamp-ul, nivelul și mesajul - util pentru
-    a înțelege cronologia evenimentelor la depanare.
-    """
-    logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s",
-                        handlers=[logging.StreamHandler(sys.stdout)], )
-
 
 def incarca_env():
     """
@@ -63,12 +45,36 @@ def incarca_env():
         env_path = Path(__file__).resolve().parent.parent / ".env"
         if env_path.exists():
             load_dotenv(env_path)
+            logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
             logging.getLogger(__name__).info("Variabile de mediu încărcate din .env")
         else:
             logging.getLogger(__name__).debug("Fișierul .env nu a fost găsit (opțional)")
     except ImportError:
         # python-dotenv nu este instalat - nu este o eroare critică
         pass
+
+
+# Încărcăm variabilele de mediu imediat, înainte de orice alte importuri locale
+# care ar putea depinde de ele (ex: storage -> config -> os.getenv)
+incarca_env()
+
+from storage import afiseaza_rezumat, salveaza_csv, salveaza_json
+
+
+def configureaza_logging():
+    """
+    Configurează sistemul de logging pentru întreaga aplicație.
+
+    Logging-ul este esențial pentru debugging și monitorizare:
+      - INFO: mesaje despre progresul normal al execuției
+      - WARNING: situații neașteptate dar netratabile ca erori
+      - ERROR: erori care împiedică funcționarea normală
+
+    Formatul include timestamp-ul, nivelul și mesajul - util pentru
+    a înțelege cronologia evenimentelor la depanare.
+    """
+    logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s",
+                        handlers=[logging.StreamHandler(sys.stdout)], )
 
 
 def parseaza_argumente() -> argparse.Namespace:
@@ -151,7 +157,6 @@ def main():
     """
     # Pasul 0: Configurare
     configureaza_logging()
-    incarca_env()
     args = parseaza_argumente()
     logger = logging.getLogger(__name__)
 
