@@ -9,10 +9,10 @@ Acest modul orchestrează întregul pipeline de scraping:
   5. Afișează un rezumat în consolă
 
 Exemple de utilizare:
-    python src/main.py                          # Metoda implicită (requests), output JSON
-    python src/main.py --metoda playwright      # Browser headless
-    python src/main.py --metoda llm             # AI/LLM (bonus)
-    python src/main.py --format toate           # Salvare JSON + CSV
+    python src/main.py                     # Metoda implicită (requests), output JSON
+    python src/main.py --metoda playwright # Browser headless
+    python src/main.py --metoda llm        # AI/LLM (bonus)
+    python src/main.py --format toate      # Salvare JSON + CSV
     python src/main.py --metoda requests --format csv
 """
 
