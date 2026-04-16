@@ -1,0 +1,29 @@
+[
+  {
+    "id": "62",
+    "nume": "Lenovo ThinkPad X240",
+    "pret": 1099.99,
+    "pret_redus": 899.99,
+    "rating": 5,
+    "numar_reviewuri": 31,
+    "economie": 200.0
+  },
+  {
+    "id": "66",
+    "nume": "Acer Aspire 3 A315-21",
+    "pret": 249.99,
+    "pret_redus": 199.99,
+    "rating": 2,
+    "numar_reviewuri": 3,
+    "economie": 50.0
+  },
+  {
+    "id": "68",
+    "nume": "Dell Inspiron 3576",
+    "pret": 699.99,
+    "pret_redus": 549.99,
+    "rating": 5,
+    "numar_reviewuri": 42,
+    "economie": 150.0
+  }
+]

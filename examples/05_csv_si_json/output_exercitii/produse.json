@@ -1,0 +1,42 @@
+[
+  {
+    "id": "60",
+    "nume": "Asus VivoBook X441NA-GA190",
+    "pret": 295.99,
+    "pret_redus": null,
+    "rating": 3,
+    "numar_reviewuri": 14
+  },
+  {
+    "id": "62",
+    "nume": "Lenovo ThinkPad X240",
+    "pret": 1099.99,
+    "pret_redus": 899.99,
+    "rating": 5,
+    "numar_reviewuri": 31
+  },
+  {
+    "id": "64",
+    "nume": "HP 250 G6",
+    "pret": 399.99,
+    "pret_redus": null,
+    "rating": 4,
+    "numar_reviewuri": 7
+  },
+  {
+    "id": "66",
+    "nume": "Acer Aspire 3 A315-21",
+    "pret": 249.99,
+    "pret_redus": 199.99,
+    "rating": 2,
+    "numar_reviewuri": 3
+  },
+  {
+    "id": "68",
+    "nume": "Dell Inspiron 3576",
+    "pret": 699.99,
+    "pret_redus": 549.99,
+    "rating": 5,
+    "numar_reviewuri": 42
+  }
+]
